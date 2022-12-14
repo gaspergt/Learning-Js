@@ -1,27 +1,57 @@
-//concatenación de variables de tipo string
-var texto1 = "Hello";
-var texto2 = "World";
-var ambosTextos =  texto1 + texto2;
-//El texto de la linea 4 se mostrara sin espacios
-var ambosTextos2 = texto1 + " " + texto2;
-console.log(ambosTextos2);
-//con la concatenacón de del espacio de verá correctamente
+//<<-------- OPERADORES ARITMERICOS -------->>
 
-//ejemplo con  numeros
-var num1 = 2;
-var num2 = 6;
-var ambosNum = num1 + num2;
-console.log(ambosNum);
-//en la linea 6 el resultado de la impresión será 8
+//declaración de variables de tipo numerico
+let a = 25;
+let b = 5;
 
-var ambosNumYambosTextos = num1 + texto1 + num2 + num1;
-console.log(ambosNumYambosTextos);ambosNumYambosTextos2
-//la impresión de la linea 18 tomara todos los valores como string
+//suma de dos variables
+let c = a + b;
+console.log("Resultado de la suma: " + c);
 
-var ambosNumYambosTextos2 = texto1 + (num1 + num2) + texto2;
-console.log(ambosNumYambosTextos2);
-//utilizando parentesis en la concatenación de la linea 21 tomara como valores numericos las variables de ese tipo
+//resta de dos variables
+let d = a - b;
+console.log("Resultado de la resta: " + d);
 
-var ambosNumYambosTextos3 = texto1 + " " + (num1 + num2) + " " + texto2;
-console.log(ambosNumYambosTextos3);
-//de esta manera estaría todo concatenado de la manera correcta
+//multiplicación de dos variables
+let e = a * b;
+console.log("Resultado de la multiplicación: " + e);
+
+//división de dos variables
+let f = a / b;
+console.log("Resultado de la división: " + f);
+
+//modulo o residuo de división de dos variables
+let g = a % b;
+console.log("Resultado del modulo es: " + g);
+
+//operador de potencias
+let h =a ** b;
+console.log("La potencia es: " + h);
+
+
+/* OPERADORES DE INCREMENTO Y DECREMENTO
+
+    1. pre-incremento (el operador "++" antes de la variable) el valor 25 de "a", pasa a ser 26 automaticamente
+    2. post-incremento (Primero se utiliza la variable y luego "++") el valor de 5 de "b" se asigna a "j", en la impresión de "j" se agrega el incremento pendiente
+
+    */
+//incremento
+//pre-incremento
+let i = ++ a;
+console.log(i);
+
+//post-decremento
+let j = b ++;
+console.log(b);
+console.log(j);
+
+//decremento
+//pre-decremento
+let k = -- a;
+console.log(a);
+console.log(k);
+
+//post-decremento 
+let l = b --;
+console.log(b);
+console.log(l);
